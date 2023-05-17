@@ -1,4 +1,5 @@
 ---
+import NoteAdderBtn from "../components/NoteAdderBtn";
 import Layout from "../layouts/Layout.astro";
 
 const pageTitle = "About Me";
@@ -21,6 +22,7 @@ const skillColor = "navy";
 
 <Layout title={pageTitle}>
     <h1>{pageTitle}</h1>
+    <NoteAdderBtn client:load />
     <p>I am cool, I think.</p>
     <ul>
         <li>My name is {identity.firstName}.</li>

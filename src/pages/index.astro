@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import MyComponent from "../components/SolidComponent";
+import NoteAdderBtn from "../components/NoteAdderBtn";
 // function MyComponent(props: any) {
 // 	return <div>Hello {props.name}</div>;
 // }
@@ -9,7 +10,8 @@ import MyComponent from "../components/SolidComponent";
 
 <Layout title="My Astro.">
 	<main>
-		<MyComponent name="Solid" />
+		<MyComponent client:load name="Solid" />
+		<NoteAdderBtn client:load />
 	</main>
 </Layout>
 
